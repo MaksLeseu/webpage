@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import screenMap from "@/assets/screen-map.jpg";
-import screenNotifications from "@/assets/screen-notifications.jpg";
-import screenAnalytics from "@/assets/screen-analytics.jpg";
+import screenMap from "@/assets/screen-map.png";
+import screenNotifications from "@/assets/screen-notifications.png";
+import screenAnalytics from "@/assets/screen-analytics.png";
 
 const tabs = [
   { id: "map", label: "Live Map", image: screenMap },

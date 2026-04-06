@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Fuel } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Product", href: "#about" },
@@ -17,10 +18,17 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="flex items-center gap-2 font-bold text-lg tracking-tight">
-          <Fuel className="h-6 w-6 text-primary" />
+        <a href="#" className="flex items-center h-full shrink-0">
+          <img
+            src={logo}
+            alt="Filtech Monitor"
+            className="block h-10 w-auto max-w-[180px] object-contain"
+            loading="eager"
+          />
+
+          {/*<Fuel className="h-6 w-6 text-primary" />
           <span className="text-foreground">FILTECH</span>
-          <span className="text-primary">MONITOR</span>
+          <span className="text-primary">MONITOR</span>*/}
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
